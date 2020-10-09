@@ -6,6 +6,8 @@
 
 	--mainText: black;
 	--secondaryText:#4b5156;
+
+	--themeDotBorder:#24292e;
 }
 
 html, body{ 
@@ -13,6 +15,9 @@ html, body{
 	margin: 0; 
 }
 
+body * {
+	transition: 0.3s;
+}
 h1, h2, h3, h4, h5, h6, strong{
 	color: var(--main-text);
 	font-family: 'Russo One', sans-serif;
@@ -76,7 +81,6 @@ h6{ font-size: 16px }
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3em 30em;
 	grid-template-areas: 
 	'navWrapper navWrapper'
 	'leftColumn rightColumn';
@@ -137,7 +141,67 @@ h6{ font-size: 16px }
 
 .leftColumn{
 	grid-area: leftColumn;
+	padding-top: 50px;
+	padding-bottom: 50px
 }
+
+#profilePic{
+	display:block;
+	margin: 0 auto;
+	height:200px;
+	width:200px;
+	object-fit: cover;
+	border:2px solid var(--borderColor);
+}
+
+#themeOptionsWrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.themeDot{
+	height:30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 5px;
+
+	border:2px solid var(--borderColor);
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	cursor: pointer;
+}
+
+#lightMode{
+	background-color: #FFFDD0;
+}
+#blueMode{
+	background-color: #192734;
+
+}
+#greenMode{
+	background-color: #78866b;
+
+}
+#purpleMode{
+	background-color: #7E4C74;
+
+}
+
+.themeDot:hover{
+	border-width: 5px;
+}
+
+#settingNote{
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+}
+
 
 .rightColumn{
 	grid-area: rightColumn;
@@ -147,4 +211,20 @@ h6{ font-size: 16px }
 	.main-container{
 		width: 95%;
 	}
+}
+
+@media screen and (max-width: 800px){
+	.introWrapper{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			'nav-wrapper'
+			'left-column'
+			'right-column'
+		;
+	}
+
+	.rightColumn{
+		justify-content: center;
+	}
+
 }
