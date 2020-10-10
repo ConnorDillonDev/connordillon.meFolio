@@ -222,11 +222,18 @@ h6{ font-size: 16px }
 }
 
 @media screen and (max-width: 800px){
-	.main-container{
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-	'navWrapper navWrapper'
-	'leftColumn'
-	'rightColumn';
+	.introWrapper{
+	grid-template-columns: 1fr 5px;
+    grid-template-areas:
+    "navWrapper navWrapper"
+    "leftColumn blank"
+    "rightColumn blank" ;
+	}
+	.rightColumn{
+		text-align: center;
+		padding-top: 0px;
+	}
+	.rightColumn p {
+    	padding: 25px;
 	}
 }
