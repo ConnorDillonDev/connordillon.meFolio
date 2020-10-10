@@ -63,7 +63,7 @@ h6{ font-size: 16px }
 }
 
 .main-container{
-	width: 1200px;
+	width: 1205px;
 	margin: 0 auto;
 }
 
@@ -279,28 +279,67 @@ h6{ font-size: 16px }
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 0px;
+	grid-column-gap: 5px;
 	grid-template-areas: 
 	"banner banner banner"
-	"leftProject centerProject rightProject";
+	"leftProject centerProject rightProject"
+	"caro caro caro";
 }
+
 .banner{
 	grid-area: banner;
 	text-align: center;
 	width: 100%;
+	margin-top: 50px;
 }
 
 .leftProject{
-	margin:100px;
+	margin-left: 2px;
 	grid-area: leftProject;
+
 }
 .centerProject{
+	margin-left: 2px;
 	grid-area: centerProject;
-	margin: 100px;
+
 }
 .rightProject{
+	margin-left: 2px;
 	grid-area: rightProject;
-	margin: 100px;
+}
+
+.projectBubble{
+	background: var(--mainColor);
+	border-radius: 30px;
+	height: auto;
+	margin-top: 50px;
+	border-width: 40px;
+	overflow:auto;
+}
+.projectBubble img{
+	padding: 5px;
+	border:1px solid var(--borderColor);
+	border-radius: 30px;
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+.projectBubble h5{
+	text-align: center;
+}
+
+.projectBubble img:hover{
+	height: 310px;
+	width: 390px;
+
+}
+
+.caro{
+	grid-area: caro;
+	text-align: center;
+
 }
 
 input[type="image"]
@@ -309,9 +348,59 @@ input[type="image"]
 	outline: none;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1206px){
 	.main-container{
 		width: 95%;
+	}
+
+	.portfolioWrapper{
+
+	background-color: var(--secondaryColor);
+	border: 1px solid var(--borderColor);
+	border-radius: 5px 5px 0 0;
+
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	"banner"
+	"leftProject "
+	"centerProject"
+	"rightProject"
+	"caro";
+	}
+
+	.projectBubble{
+		width: 50%;
+		margin: auto;
+	}
+
+	.projectBubble img{
+		padding: 5px;
+		border:1px solid var(--borderColor);
+		border-radius: 30px;
+
+		-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+		box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+		width: 97.5%;
+		height: auto;
+	}
+
+	.leftProject{
+		margin: -80px;
+		margin-top: 80px;
+	}
+
+	.rightProject{
+		margin: -80px;
+		margin-top: 80px;
+	}
+
+	.centerProject{
+		margin: -80px;
+		margin-top: 80px;
 	}
 }
 
@@ -359,4 +448,45 @@ input[type="image"]
 		border-left: 2px solid var(--mainColor);
 		border-top: 2px solid var(--mainColor);
 	}
+
+	.portfolioWrapper{
+		background-color: var(--secondaryColor);
+		border: 1px solid var(--borderColor);
+		border-radius: 5px 5px 0 0;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"banner"
+		"leftProject"
+		"centerProject"
+		"rightProject"
+		"caro";
+	}
+
+	.projectBubble{
+		padding-right: 10px;
+		padding-left: 5px;
+		padding-top: 5px;
+		background: var(--mainColor);
+		border-radius: 30px;
+		height: auto;
+		border-width: 40px;
+		overflow:auto;
+
+
+	}
+
+	.projectBubble img{
+		border:1px solid var(--borderColor);
+		border-radius: 30px;
+
+		-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+		box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+		width: 98%;
+		height: auto;
+	}
+
 }
