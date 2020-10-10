@@ -196,7 +196,7 @@ h6{ font-size: 16px }
 	border-width: 5px;
 }
 
-#settingNote{
+#settingsNote{
 	font-size: 12px;
 	font-style: italic;
 	text-align: center;
@@ -205,6 +205,14 @@ h6{ font-size: 16px }
 
 .rightColumn{
 	grid-area: rightColumn;
+	align-items: center;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.rightColumn p{
+	padding-right: 100px;
+
 }
 
 @media screen and (max-width: 1200px){
@@ -214,17 +222,11 @@ h6{ font-size: 16px }
 }
 
 @media screen and (max-width: 800px){
-	.introWrapper{
+	.main-container{
 		grid-template-columns: 1fr;
 		grid-template-areas: 
-			'nav-wrapper'
-			'left-column'
-			'right-column'
-		;
+	'navWrapper navWrapper'
+	'leftColumn'
+	'rightColumn';
 	}
-
-	.rightColumn{
-		justify-content: center;
-	}
-
 }
