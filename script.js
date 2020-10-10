@@ -1,5 +1,7 @@
 let theme = localStorage.getItem('theme')
 
+findAge();
+
 if (theme == null){
 	setTheme('light')
 }else{
@@ -35,6 +37,21 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 
+}
 
 
+function findAge(){
+	var today = new Date();
+	var birthDate = new Date("1996-01-01");
+	var age = today.getFullYear() - birthDate.getFullYear();
+	var m = today.getMonth() - birthDate.getMonth();
+
+	if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+    {
+        age--;
+    }
+
+    var str = document.getElementById("myAge").innerHTML;
+    var res = str.replace("unknown", age);
+    document.getElementById("myAge").innerHTML = res;
 }
