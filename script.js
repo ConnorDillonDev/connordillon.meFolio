@@ -39,6 +39,38 @@ function setTheme(mode){
 
 }
 
+function emailClipboard(){
+	var copyText = document.createElement("textarea");
+	document.body.appendChild(copyText);
+	copyText.value = "connordillon.me@outlook.com";
+  	copyText.select();
+  	document.execCommand("copy");
+  	document.body.removeChild(copyText);
+}
+
+function mobileClipboard(){
+	var copyText = document.createElement("textarea");
+	document.body.appendChild(copyText);
+	copyText.value = "+44776651506";
+  	copyText.select();
+  	document.execCommand("copy");
+  	document.body.removeChild(copyText);
+}
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
 
 function findAge(){
 	var today = new Date();

@@ -34,6 +34,10 @@ a{
 	color: aqua;
 }
 
+a:hover{
+	font-size: 20px;
+}
+
 ul{
 	list-style: none;
 }
@@ -193,7 +197,7 @@ h6{ font-size: 16px }
 }
 
 .themeDot:hover{
-	border-width: 5px;
+	border-width: 4px;
 }
 
 #settingsNote{
@@ -213,6 +217,96 @@ h6{ font-size: 16px }
 .rightColumn p{
 	padding-right: 100px;
 
+}
+
+.detailsWrapper{
+	background-color: var(--secondaryColor);
+	border: 0px solid var(--borderColor);
+	border-radius: 5px 5px 0 0;
+
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-column-gap: 0px;
+	grid-template-areas: 
+	"contact CV";
+}
+
+.contact{
+	text-align: center;
+}
+
+.CV{
+	border-left: 2px solid var(--mainColor);
+	border-bottom: 2px solid  var(--mainColor);
+	text-align: center;
+}
+
+.speechBubble {
+	background: var(--mainColor);
+	border-radius: .4em;
+	height: auto;
+	padding: 10px;
+	margin: 40px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+.infoBubble {
+	background: var(--mainColor);
+	border-radius: .4em;
+	height: auto;
+	margin: 40px;
+	margin-top: 20px;
+	overflow: auto;
+}
+
+.clipboard{
+	margin-left: 5px;
+	width: auto;
+	height: 20px;
+}
+
+.clipboard:hover{
+	width: auto;
+	height: 30px;
+}
+
+.portfolioWrapper{
+
+	background-color: var(--secondaryColor);
+	border: 1px solid var(--borderColor);
+	border-radius: 5px 5px 0 0;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 0px;
+	grid-template-areas: 
+	"banner banner banner"
+	"leftProject centerProject rightProject";
+}
+.banner{
+	grid-area: banner;
+	text-align: center;
+	width: 100%;
+}
+
+.leftProject{
+	margin:100px;
+	grid-area: leftProject;
+}
+.centerProject{
+	grid-area: centerProject;
+	margin: 100px;
+}
+.rightProject{
+	grid-area: rightProject;
+	margin: 100px;
+}
+
+input[type="image"]
+{
+	border:none;
+	outline: none;
 }
 
 @media screen and (max-width: 1200px){
@@ -235,5 +329,34 @@ h6{ font-size: 16px }
 	}
 	.rightColumn p {
     	padding: 25px;
+	}
+
+	.portfolioWrapper{
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"leftProject"
+		"centerProject"
+		"rightProject";
+	}
+
+	.detailsWrapper{
+		background-color: var(--secondaryColor);
+		border: 0px solid var(--borderColor);
+		border-radius: 5px 5px 0 0;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"contact"
+		"CV";
+	}
+
+	.contact{
+		border-left: 2px solid var(--mainColor);
+	}
+	
+	.CV{
+		border-left: 2px solid var(--mainColor);
+		border-top: 2px solid var(--mainColor);
 	}
 }
