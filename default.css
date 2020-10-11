@@ -8,6 +8,8 @@
 	--secondaryText:#4b5156;
 
 	--themeDotBorder:#24292e;
+
+	--linkColor: blue;
 }
 
 
@@ -33,7 +35,7 @@ p, li, span, label, input, textarea{
 
 a{
 	text-decoration: none;
-	color: aqua;
+	color: var(--linkColor);
 }
 
 a:hover{
