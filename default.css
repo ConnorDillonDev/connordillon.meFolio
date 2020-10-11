@@ -413,20 +413,27 @@ input[type="image"]
   overflow: hidden;
 }
 
-.slide-right h3 {
-  animation: .7s slide-right .5s forwards;
+.slide-right h3, h1, h5 {
+  	animation: .9s slide-right .5s forwards;
     transform:translateX(-100%);
 }
 
 .slide-right p {
-  animation: 1s slide-right 2s forwards;
+  	animation: 1s slide-right 2s forwards;
     transform:translateX(-110%);
 }
 
 .slide-right img {
-  animation: 2s slide-right 3s forwards;
-    transform:translateX(-5000%);
+  	animation: 2s slide-right 3s forwards;
+	transform:translateX(-5000%);
 }
+
+.slide-right #profilePic{
+	animation: .9s slide-right .2s forwards;
+	transform:translateX(-300%);
+}
+
+
 
 @keyframes slide-right {
   to {
