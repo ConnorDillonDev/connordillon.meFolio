@@ -386,9 +386,24 @@ input[type="image"]
 
 #findMeWrapper{
 	text-align: center;
+	margin-bottom: 30px;
 }
 
+.icons img{
+	padding-right: 20px;
+	padding-bottom: 10px
+}
 
+.speechBubble img{
+	padding-right: 30px;
+	margin: 10px;
+	padding-bottom: 10px
+}
+
+.speechBubble a img:hover{
+	height: 90px;
+	width: auto;
+} 
 
 
 /*animations*/
@@ -406,6 +421,11 @@ input[type="image"]
 .slide-right p {
   animation: 1s slide-right 2s forwards;
     transform:translateX(-110%);
+}
+
+.slide-right img {
+  animation: 2s slide-right 3s forwards;
+    transform:translateX(-5000%);
 }
 
 @keyframes slide-right {
