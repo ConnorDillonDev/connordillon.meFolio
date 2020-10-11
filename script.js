@@ -3,7 +3,7 @@ let theme = localStorage.getItem('theme')
 findAge();
 
 if (theme == null){
-	setTheme('light')
+	setTheme('green')
 }else{
 	setTheme(theme)
 }
@@ -20,7 +20,7 @@ for (var i=0; themeDots.length > i; i++){
 
 function setTheme(mode){
 	if(mode == 'light'){
-		document.getElementById('theme-style').href ='default.css'
+		document.getElementById('theme-style').href ='lightmode.css'
 	}
 
 	if(mode == 'blue'){
