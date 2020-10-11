@@ -352,6 +352,35 @@ input[type="image"]
 	outline: none;
 }
 
+
+#project1 a:hover{
+	font-size: 16.5px;
+}
+
+#project1:hover{
+	filter: grayscale(1);
+}
+
+#project2 a:hover{
+	font-size: 16.5px;
+}
+
+#project2:hover{
+	filter: grayscale(1);
+}
+
+#project3 a:hover{
+	font-size: 16.5px;
+	filter: brightness(120%);
+}
+
+#project3:hover{
+	filter: grayscale(1);
+}
+
+
+/*media queries below*/
+
 @media screen and (max-width: 1120px){
 	.projects-grid{
 	display: grid;
