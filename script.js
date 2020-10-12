@@ -46,7 +46,7 @@ function emailClipboard(){
   	copyText.select();
   	document.execCommand("copy");
   	document.body.removeChild(copyText);
-  	alert("copied!");
+  	alert("Email Copied!");
 }
 
 function mobileClipboard(){
@@ -56,7 +56,7 @@ function mobileClipboard(){
   	copyText.select();
   	document.execCommand("copy");
   	document.body.removeChild(copyText);
-  	alert("copied!");
+  	alert("Mobile Number Copied!");
 }
 
 function myFunction() {
