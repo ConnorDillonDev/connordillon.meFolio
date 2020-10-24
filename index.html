@@ -26,30 +26,30 @@
 
         <div class="introWrapper">
             <div class="nav-wrapper">
-                <div class="dotsWrapper">
-                    <div id="dot1" class="browserDot"></div>
-                    <div id="dot2" class="browserDot"></div>
-                    <div id="dot3" class="browserDot"></div>
+                <div class="dots">
+                    <div id="dots__dot1" class="browserDot"></div>
+                    <div id="dots__dot2" class="browserDot"></div>
+                    <div id="dots__dot3" class="browserDot"></div>
                 </div>
 
 
-                <ul id="navigation">
-                    <li><a href="#contact"> Contact </a></li>
-                </ul>
+                <div id="navigation">
+                    <li><a href="#contact--scrollpoint"> Contact </a></li>
+                </div>
             </div>
 
             <div class="leftColumn">
                 <div class="slide-right">
-                    <img id="profilePic" src="images/circle-cropped.png" alt="image of myself" style="border: none;">
+                    <img id="leftColumn__profilePic" src="images/circle-cropped.png" alt="image of myself" style="border: none;">
                     <h5 style="text-align: center;line-height: 0">Personalize Theme
                     </h5>
                 </div>
 
-                <div id="themeOptionsWrapper">
-                    <div data-mode="purple" id="purpleMode" class="themeDot"></div>
-                    <div data-mode="blue" id="blueMode" class="themeDot"></div>
-                    <div data-mode="green" id="greenMode" class="themeDot"></div>
-                    <div data-mode="light" id="lightMode" class="themeDot"></div>
+                <div id="themeOptions">
+                    <div data-mode="purple" id="themeOptions__purpleMode" class="themeDot"></div>
+                    <div data-mode="blue" id="themeOptions__blueMode" class="themeDot"></div>
+                    <div data-mode="green" id="themeOptions__greenMode" class="themeDot"></div>
+                    <div data-mode="light" id="themeOptions__lightMode" class="themeDot"></div>
                 </div>
 
                 <div class="slide-right">
@@ -64,11 +64,10 @@
                 <div class="slide-right">
                     <main>
                         <h3>About Me</h3>
-                        <p>My name is Connor, I am a <span id="myAge">unknown</span> year-old computer enthusiast, who
+                        <p>My name is Connor, I am a <span id="rightColumn__myAge">unknown</span> year-old computer enthusiast, who
                             is always excited to work with new technologies. I am currently studying Web and Mobile
                             Development in Glasgow, Scotland. Previously I have completed an HND in Computer Networking
                             and I'm currently working towards my Bachelor's degree.</p>
-                        <p id="contact"></p>
                     </main>
                 </div>
             </div>
@@ -78,55 +77,6 @@
 </section>
 
 <section class="styleTwo">
-    <div class="main-container">
-        <div class="detailsWrapper">
-            <div class="contact">
-                <div class="slide-right">
-                    <h3>Get in Touch</h3>
-                    <div class=speechBubble>
-                        <section>
-                            <p>If you have any questions about my services, or just want to say hello, feel free to
-                                contact me. Below are my email and mobile:
-                            </p>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="slide-right">
-                    <div class=infoBubble>
-                        <section>
-                            <p>ConnorDillon.me@outlook.com <input type="image" onclick="emailClipboard()"
-                                                                  src="images\clip.png" class="clipboard"
-                                                                  alt="copy-to-clipboard"></p>
-
-                            <p> +447766515065 <input type="image" onclick="mobileClipboard()" src="images\clip.png"
-                                                     class="clipboard" alt="copy-to-clipboard"></p>
-                        </section>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide-right">
-                <div class="CV">
-                    <section>
-                        <h3>Resume</h3>
-                        <div class=speechBubble>
-                            <p>Want to know more about me? <a class="download" href="items/ConnorCV2020.pdf"
-                                                              target="_blank">Here</a> is a copy of my Resume. If there
-                                is anything else you might want to know, please contact me.</p>
-                        </div>
-                        <div class="infoBubble" style="padding: 18px">
-                            <p><a class="download" href="items/ConnorCV2020.pdf" target="_blank">Download</a></p>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="styleOne">
     <div class="main-container">
         <div class="projects-grid">
             <div class="banner">
@@ -171,12 +121,58 @@
     </div>
 </section>
 
+<section class="styleOne">
+    <div class="main-container">
+        <div class="details">
+            <div class="contact">
+                <div class="slide-right">
+                    <h3 id="contact--scrollpoint">Get in Touch</h3>
+                    <div class=details__speechBubble>
+                        <section>
+                            <p>If you have any questions about my services, or just want to say hello, feel free to
+                                contact me. Below is my email:
+                            </p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="slide-right">
+                    <div class=details__speechBubble  id="details__fix">
+                        <section>
+                            <p>ConnorDillon.me@outlook.com <input type="image" onclick="emailClipboard()"
+                                                                  src="images\clip.png" class="clipboard"
+                                                                  alt="copy-to-clipboard"></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-right">
+                <div class="CV">
+                    <section>
+                        <h3>Resume</h3>
+                        <div class=details__speechBubble style="margin-bottom: 60px;">
+                            <p>Want to know more about me? <a class="download" href="items/ConnorCV2020.pdf"
+                                                              target="_blank">Here</a> is a copy of my Resume. If there
+                                is anything else you might want to know, please contact me.</p>
+                        </div>
+                        <div id="details__fix" class="details__speechBubble";>
+                            <p><a href="items/ConnorCV2020.pdf" target="_blank">Download</a></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <section class="styleTwo">
     <div class="main-container">
         <div id="techWrapper">
             <div class="slide-right">
                 <h3>Tech</h3>
-                <div class="speechBubble">
+                <div class="details__speechBubble">
                     <p>Techologies that I have worked with:</p>
                     <div class="icons">
                         <img src="images\web.png" alt="jscript,html5,css" height="70px" width="auto">
@@ -204,7 +200,7 @@
             <div class="slide-right">
                 <section>
                     <h3>Find me</h3>
-                    <div class="speechBubble">
+                    <div class="details__speechBubble">
                         <p>Here are some places that I am most active.<br>You can find me at:</p>
                         <a href="https://github.com/ConnorDillonDev" target="_blank">
                             <img src="images\git.png" alt="Github" height="70px" width="auto">
@@ -220,7 +216,7 @@
     </div>
     </div>
     <footer>
-        <span id="name_findMe">Connor Dillon <sup>&reg;</sup></span> <span id="sourcecode_findMe"><a
+        <span id="findMe__name">Connor Dillon <sup>&reg;</sup></span> <span id="findMe__sourcecode"><a
             href="https://github.com/ConnorDillonDev/connordillon.meFolio" target="_blank"> Source Code</a></span>
     </footer>
 </section>

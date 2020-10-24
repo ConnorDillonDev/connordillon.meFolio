@@ -85,7 +85,7 @@ function findAge(){
         age--;
     }
 
-    var str = document.getElementById("myAge").innerHTML;
+    var str = document.getElementById("rightColumn__myAge").innerHTML;
     var res = str.replace("unknown", age);
-    document.getElementById("myAge").innerHTML = res;
+    document.getElementById("rightColumn__myAge").innerHTML = res;
 }
