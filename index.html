@@ -1,198 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"/>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+          rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="default.css">
 
-	<link id="theme-style" rel="stylesheet" type="text/css" href="">
-
-	<title>
-		Connor Dillon
-	</title>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <title>
+        Connor Dillon
+    </title>
 </head>
 <body>
-	<section class="styleOne">
-		<div class="main-container">
-			<div class="greetingWrapper">
-				<div class="slide-right">
-					<h1>Hi, I'm Connor Dillon</h1>
-				</div>
-			</div>
+<section class="styleOne">
+    <div class="main-container">
+        <div class="greetingWrapper">
+            <div class="slide-right">
+                <header><h1>Hi, I'm Connor Dillon</h1></header>
+            </div>
+        </div>
 
-			<div class="introWrapper">
-				<div class="nav-wrapper">
-					<div class="dotsWrapper">
-						<div id="dot1" class="browserDot"></div>
-						<div id="dot2" class="browserDot"></div>
-						<div id="dot3" class="browserDot"></div>
-					</div>
-
-
-					<ul id="navigation">
-						<li><a href="#contact"> Contact </a></li>
-					</ul>
-				</div>
-
-				<div class="leftColumn">
-					<div class="slide-right">
-						<img id="profilePic" src="images/circle-cropped.png" alt="image of myself" style="border: none;">
-						<h5 style="text-align: center;line-height: 0">Personalize Theme
-						</h5>
-					</div>
-
-					<div id="themeOptionsWrapper">
-						<div data-mode="purple" id="purpleMode" class="themeDot"></div>
-						<div data-mode="blue" id="blueMode" class="themeDot"></div>
-						<div data-mode="green" id="greenMode" class="themeDot"></div>
-						<div data-mode="light" id="lightMode" class="themeDot"></div>
-					</div>
-
-					<div class="slide-right">
-						<p class="smallNote">
-							*These settings will be saved for<br>
-						your next visit
-						</p>
-					</div>
-				</div>
-
-				<div class="rightColumn">
-					<div class="slide-right">
-						<h3>About Me</h3>
-						<p>My name is Connor, I am a <span id="myAge">unknown</span> year-old computer enthusiast, who is always excited to work with new technologies. I am currently studying Web and Mobile Development in Glasgow, Scotland. Previously I have completed an HND in Computer Networking and I'm currently working towards my Bachelor's degree.</p>
-						 <p id="contact"></p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="styleTwo">
-		<div class="main-container">
-			<div class="detailsWrapper">
-				<div class="contact">
-					<div class="slide-right">
-						<h3>Get in Touch</h3>
-							<div class=speechBubble>
-								<p>If you have any questions about my services, or just want to say hello, feel free to contact me. Below are my email and mobile:
-								</p>
-							</div>
-					</div>
-
-					<div class="slide-right">
-						<div class=infoBubble>
-
-							<p>ConnorDillon.me@outlook.com <input type="image" onclick="emailClipboard()" id="copy-button" src="images\clip.png" class="clipboard" alt="copytoclipboard"></p>
-
-							<p> +447766515065 <input type="image" onclick="mobileClipboard()" id="copy-button" src="images\clip.png" class="clipboard" alt="copytoclipboard"></p> </p>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide-right">
-					<div class="CV">
-						<h3>Resume</h3>
-						<div class=speechBubble>
-							<p>Want to know more about me? <a id="download" href="items/ConnorCV2020.pdf" target="_blank">Here</a> is a copy of my Resume. If there is anything else you might want to know, please contact me.</p>
-						</div>
-						<div class="infoBubble" style="padding: 18px";>
-							<p><a id="download" href="items/ConnorCV2020.pdf" target="_blank">Download</a></p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div> 
-	</section>	
-
-	<section class="styleOne">
-		<div class="main-container">
-				<div class="projects-grid">
-					<div class="banner">
-						<div class="slide-right">
-							<h3>Featured Projects</h3>
-							<p class="smallNote">Here are some of my many projects<br>
-							more can be found on my <a href="https://github.com/ConnorDillonDev" target="_blank">Github</a></p>
-						</div>
-					</div>
-
-					<div id="project1">
-						<a href="https://github.com/ConnorDillonDev/FlightListCommented" target="_blank">
-						<img src="images\java.PNG" alt="project1" height="79%" width="100%"> </img>
-						<p>Flight Management System</p>
-						</a>
-					</div>
-
-					<div id="project2">
-						<a href="https://github.com/ConnorDillonDev/HigherNationalDiplomaSubmission" target="_blank">
-						<img src="images\userStruc.png" alt="project2" height="82%" width="100%"> </img>
-						<p>Upgrading a Business Network</p>
-						</a>
-					</div>
-
-					<div id="project3">
-						<a href="http://blog.connordillon.me/" target="_blank">
-						<img src="images\ghost.png" alt="project3" height="82%" width="100%"> </img>
-						<p>Blog</p>
-						</a>
-					</div>
-
-				</div>
-		</div> 
-	</section>
-
-	<section class="styleTwo">
-		<div class="main-container">
-			<div id="techWrapper">
-				<div class="slide-right">
-					<h3>Tech</h3>
-					<div class="speechBubble">
-						<p>Techologies that I have worked with:</p>
-						<div class="icons">
-							<img src="images\web.png" alt="jscript,html5,css" height="70px" width="auto">
-
-							<img src="images\query.png" alt="jquery" height="70px" width="auto">
-
-							<img src="images\git.png" alt="Github" height="70px" width="auto">
-
-							<img src="images\icons8-kali-linux-48.png" alt="kali linux" height="70px" width="auto">
-
-							<img src="images\javaIcon.png" alt="Java" height="70px" width="auto">
-
-							<img src="images\icons8-microsoft-sql-server-48.png" alt="microsoftSQL server" height="70px" width="auto">
-
-							<img src="images\cisco.png" alt="cisco CCNA1" height="70px" width="auto">
-
-							<img src="images\python2.png" alt="python" height="70px" width="auto">
-						</div>
-					</div>
-				</div>			
-			</div>
-
-			<div id="findMeWrapper">
-				<div class="slide-right">
-					<h3>Find me</h3>
-						<div class="speechBubble">
-							<p>Here are some places that I am most active.<br>You can find me at:</p>
-							<a href="https://github.com/ConnorDillonDev" target="_blank" alt="githublink">
-								<img src="images\git.png" alt="Github" height="70px" width="auto">
-							</a>
-
-							<a href="https://www.linkedin.com/in/connor-dillon-407b2a176/" target="_blank" alt="LinkedIn Profile">
-								<img src="images\linkedin.png" alt="LinkedIn" height="70px" width="auto">
-							</a>
-						</div>
-				</div>
-			</div>
-		</div> 
-	</section>
+        <div class="introWrapper">
+            <div class="nav-wrapper">
+                <div class="dotsWrapper">
+                    <div id="dot1" class="browserDot"></div>
+                    <div id="dot2" class="browserDot"></div>
+                    <div id="dot3" class="browserDot"></div>
+                </div>
 
 
- <script type="text/javascript" src="script.js"> </script>
+                <ul id="navigation">
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </div>
+
+            <div class="leftColumn">
+                <div class="slide-right">
+                    <img id="profilePic" src="images/circle-cropped.png" alt="image of myself" style="border: none;">
+                    <h5 style="text-align: center;line-height: 0">Personalize Theme
+                    </h5>
+                </div>
+
+                <div id="themeOptionsWrapper">
+                    <div data-mode="purple" id="purpleMode" class="themeDot"></div>
+                    <div data-mode="blue" id="blueMode" class="themeDot"></div>
+                    <div data-mode="green" id="greenMode" class="themeDot"></div>
+                    <div data-mode="light" id="lightMode" class="themeDot"></div>
+                </div>
+
+                <div class="slide-right">
+                    <p class="smallNote">
+                        *These settings will be saved for<br>
+                        your next visit
+                    </p>
+                </div>
+            </div>
+
+            <div class="rightColumn">
+                <div class="slide-right">
+                    <main>
+                        <h3>About Me</h3>
+                        <p>My name is Connor, I am a <span id="myAge">unknown</span> year-old computer enthusiast, who
+                            is always excited to work with new technologies. I am currently studying Web and Mobile
+                            Development in Glasgow, Scotland. Previously I have completed an HND in Computer Networking
+                            and I'm currently working towards my Bachelor's degree.</p>
+                        <p id="contact"></p>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="styleTwo">
+    <div class="main-container">
+        <div class="detailsWrapper">
+            <div class="contact">
+                <div class="slide-right">
+                    <h3>Get in Touch</h3>
+                    <div class=speechBubble>
+                        <section>
+                            <p>If you have any questions about my services, or just want to say hello, feel free to
+                                contact me. Below are my email and mobile:
+                            </p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="slide-right">
+                    <div class=infoBubble>
+                        <section>
+                            <p>ConnorDillon.me@outlook.com <input type="image" onclick="emailClipboard()"
+                                                                  src="images\clip.png" class="clipboard"
+                                                                  alt="copy-to-clipboard"></p>
+
+                            <p> +447766515065 <input type="image" onclick="mobileClipboard()" src="images\clip.png"
+                                                     class="clipboard" alt="copy-to-clipboard"></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-right">
+                <div class="CV">
+                    <section>
+                        <h3>Resume</h3>
+                        <div class=speechBubble>
+                            <p>Want to know more about me? <a class="download" href="items/ConnorCV2020.pdf"
+                                                              target="_blank">Here</a> is a copy of my Resume. If there
+                                is anything else you might want to know, please contact me.</p>
+                        </div>
+                        <div class="infoBubble" style="padding: 18px">
+                            <p><a class="download" href="items/ConnorCV2020.pdf" target="_blank">Download</a></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="styleOne">
+    <div class="main-container">
+        <div class="projects-grid">
+            <div class="banner">
+                <div class="slide-right">
+                    <section>
+                        <h3>Featured Projects</h3>
+                        <p class="smallNote">Here are some of my many projects<br>
+                            more can be found on my <a href="https://github.com/ConnorDillonDev"
+                                                       target="_blank">Github</a></p>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="project" id="project1">
+                <section>
+                    <a href="https://github.com/ConnorDillonDev/FlightListCommented" target="_blank">
+                        <img src="images\java.PNG" alt="project1" width="95%">
+                        <p>Flight Management System</p>
+                    </a>
+                </section>
+            </div>
+
+            <div class="project" id="project2">
+                <section>
+                    <a href="https://github.com/ConnorDillonDev/HigherNationalDiplomaSubmission" target="_blank">
+                        <img src="images\userStruc.png" alt="project2" width="95%">
+                        <p>Upgrading a Business Network</p>
+                    </a>
+                </section>
+            </div>
+
+            <div class="project" id="project3">
+                <section>
+                    <a href="http://blog.connordillon.me/" target="_blank">
+                        <img src="images\ghost.png" alt="project3" width="95%">
+                        <p>Blog</p>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="styleTwo">
+    <div class="main-container">
+        <div id="techWrapper">
+            <div class="slide-right">
+                <h3>Tech</h3>
+                <div class="speechBubble">
+                    <p>Techologies that I have worked with:</p>
+                    <div class="icons">
+                        <img src="images\web.png" alt="jscript,html5,css" height="70px" width="auto">
+
+                        <img src="images\query.png" alt="jquery" height="70px" width="auto">
+
+                        <img src="images\git.png" alt="Github" height="70px" width="auto">
+
+                        <img src="images\icons8-kali-linux-48.png" alt="kali linux" height="70px" width="auto">
+
+                        <img src="images\javaIcon.png" alt="Java" height="70px" width="auto">
+
+                        <img src="images\icons8-microsoft-sql-server-48.png" alt="microsoftSQL server" height="70px"
+                             width="auto">
+
+                        <img src="images\cisco.png" alt="cisco CCNA1" height="70px" width="auto">
+
+                        <img src="images\python2.png" alt="python" height="70px" width="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="findMeWrapper">
+            <div class="slide-right">
+                <section>
+                    <h3>Find me</h3>
+                    <div class="speechBubble">
+                        <p>Here are some places that I am most active.<br>You can find me at:</p>
+                        <a href="https://github.com/ConnorDillonDev" target="_blank">
+                            <img src="images\git.png" alt="Github" height="70px" width="auto">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/connor-dillon-407b2a176/" target="_blank">
+                            <img src="images\linkedin.png" alt="LinkedIn" height="70px" width="auto">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <span id="name_findMe">Connor Dillon <sup>&reg;</sup></span> <span id="sourcecode_findMe"><a
+            href="https://github.com/ConnorDillonDev/connordillon.meFolio" target="_blank"> Source Code</a></span>
+    </footer>
+</section>
+
+
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
